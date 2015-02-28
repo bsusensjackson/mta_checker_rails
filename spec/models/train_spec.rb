@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Train, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "creates a service outage when notified" do 
+    expect {  Train.look_for_service_status! }.to change { ServiceOutage.count }.by(1)
+  end
 end
