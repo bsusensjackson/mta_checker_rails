@@ -31,6 +31,8 @@ gem 'pry-rails'
 gem 'httparty'
 gem 'dalli'
 gem 'redis-rails'
+gem 'chronic'
+gem 'omniauth'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
