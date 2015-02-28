@@ -7,11 +7,10 @@ RSpec.describe 'JSONParser', :type => :model do
     expect(response.header).to match /json/
   end
 
-  it "returns the status for the specified subway" do 
+  it "returns the status for the specified subway line" do 
     train = 'ACE'
     JSONParser.call
-    p status = JSONParser.find_status(train)
-    p status.first['name']
-    expect(status.first['name']).to eq "ACE" 
+    status = JSONParser.find_status(train)
+    expect(status['name']).to eq "ACE" 
   end
 end
