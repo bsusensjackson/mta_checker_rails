@@ -30,6 +30,7 @@ gem 'pry-rails'
 # gem 'unicorn'
 gem 'httparty'
 gem 'dalli'
+gem 'redis-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
