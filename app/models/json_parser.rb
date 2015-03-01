@@ -1,12 +1,12 @@
 class JSONParser 
-  JSON_URL = 'http://www.mta.info/service_status_json'
-  class << self
-    def call
-      @response = JSON.parse HTTParty.get(JSON_URL)
-    end
+  def initialize(http_wrapper)
+    @http_wrapper = http_wrapper 
+  end
+  def parse
+    @response = JSON.parse(@http_wrapper.call)  
+  end
 
-    def find_status(name)
-      @response['subway']['line'].select { |train| train['name'] == name }.first
-    end
+  def find_status(name)
+    @response['subway']['line'].select { |train| train['name'] == name }.first
   end
 end
