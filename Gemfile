@@ -33,6 +33,7 @@ gem 'dalli'
 gem 'redis-rails'
 gem 'chronic'
 gem 'omniauth'
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
