@@ -2,6 +2,7 @@ class JSONParser
   def initialize(http_wrapper)
     @http_wrapper = http_wrapper 
   end
+
   def parse
     @response = JSON.parse(@http_wrapper.call)  
   end
