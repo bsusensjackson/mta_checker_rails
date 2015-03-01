@@ -5,12 +5,14 @@ class TrainNotifier
     @trains = Train.all
   end
 
-  def evaluate! #TODO- This is extremely naive.  Evaluate choice of data structure here. 
+  def evaluate! #TODO- Refactor Me
     @status_hash['subway']['line'].each do |item|
       @trains.each do |train|
         if train.name == item['name'] 
-          if item['status'] == 'DELAYS'
-            train.current_outage = true
+          if item['status'] == 'DELAYS' && train.current_outage == false
+            train.set_current_outage = true
+          elsif item['status'] == 'GOOD SERVICE' && train.current_outage == true
+            train.set_current_outage = false
           end
         end
       end 
