@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -34,6 +34,7 @@ gem 'redis-rails'
 gem 'chronic'
 gem 'omniauth'
 gem 'devise'
+gem 'haml'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
