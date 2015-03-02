@@ -35,6 +35,8 @@ gem 'chronic'
 gem 'omniauth'
 gem 'devise'
 gem 'haml'
+gem 'hirb'
+gem 'thin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
