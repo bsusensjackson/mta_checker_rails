@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: mta_checker_rails_development
+
+test:
+  <<: *default
+  database: mta_checker_rails_test
+
+#     url: <%= ENV['DATABASE_URL'] %>
+production:
+  <<: *default
+  database: mta_checker_rails_production
+  username: mta_checker_rails
+  password: <%= ENV['MTA_CHECKER_RAILS_DATABASE_PASSWORD'] %>

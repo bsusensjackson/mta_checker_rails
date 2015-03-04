@@ -14,5 +14,7 @@
 
 .DS_Store
 
-/config/database.yml
 *.swp
+
+# Ignore application configuration
+/config/application.yml
