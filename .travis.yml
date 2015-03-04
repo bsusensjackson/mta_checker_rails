@@ -1,4 +1,6 @@
 language: ruby
 cache: bundler
 rvm: 2.2
+before_script:
+  - psql -c 'create database mta_checker_rails_test;' -U postgres
 
