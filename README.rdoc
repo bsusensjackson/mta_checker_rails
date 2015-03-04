@@ -1,4 +1,5 @@
-== README
+== Mta Checker
+[![Build Status](https://travis-ci.org/bsusensjackson/mta_checker_rails.svg?branch=master)](https://travis-ci.org/bsusensjackson/mta_checker_rails)
 
 This is a web app for notifying hapless straphangers about service outages via SMS, as well as providing data visualization for total time of disruptions that occured per week. 
 
