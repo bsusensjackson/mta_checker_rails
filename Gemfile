@@ -23,6 +23,7 @@ gem 'devise'
 gem 'haml'
 gem 'hirb'
 gem 'thin'
+gem 'figaro'
 
 group :development, :test do
   gem 'rspec-rails'
