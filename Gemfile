@@ -24,6 +24,7 @@ gem 'haml'
 gem 'hirb'
 gem 'thin'
 gem 'figaro'
+gem 'twilio-ruby'
 
 group :development, :test do
   gem 'rspec-rails'
